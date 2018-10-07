@@ -1,0 +1,21 @@
+@import "variables";
+
+body {
+  padding: 0 100px;
+  margin-top: 0;
+  background-color: $layout-color;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.blog-container {
+  width: 100%;
+  min-height: 700px;
+  background-color: $blog-background-color;
+
+  h1 {
+    margin: 0;
+  }
+}
+.blog-content {
+	
+}
