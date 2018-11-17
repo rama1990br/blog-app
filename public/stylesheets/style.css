@@ -1,7 +1,13 @@
+/* navigation styles */
+.pagination a {
+  border: 1px solid black; }
+
+.pagination .page {
+  display: inline-block; }
+
 body {
   padding: 0 100px;
-  margin-top: 0;
-  background-color: #eaeaea;
+  margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 .blog-container {
