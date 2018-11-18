@@ -1,7 +1,19 @@
 <div class="pagination">
-	<ol>
+	<ol id="pages">
+    {{#previousPage}}
+         <li class="page">
+           <a href="{{pageUrl}}">{{linkText}}</a>
+         </li>
+    {{/previousPage}}
 		{{#pages}}
-		<li class="page"><a href="{{pageUrl}}">{{pageNumber}}</a></li>
-		{{/pages}}
+			   <li class="page {{#if isCurrentPage}} current-page {{/if}}">
+           <a href="{{pageUrl}}">{{linkText}}</a>
+         </li>
+    {{/pages}}
+    {{#nextPage}}
+         <li class="page">
+           <a href="{{pageUrl}}">{{linkText}}</a>
+         </li>
+    {{/nextPage}}
 	</ol>
 </div>

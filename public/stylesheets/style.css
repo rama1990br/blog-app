@@ -5,6 +5,9 @@
 .pagination .page {
   display: inline-block; }
 
+.pagination .current-page {
+  background-color: gray; }
+
 body {
   padding: 0 100px;
   margin: 0;

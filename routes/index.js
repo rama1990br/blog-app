@@ -5,33 +5,17 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	var blog = fs.readFileSync('./blogs/blog.txt');
-	var products = [
-		{
-			"id": 1,
-			"src": "./public/images/carousel-1.jpg",
-			"alt": "product 1",
-		},
-
-		{
-			"id": 2,
-			"src": "./public/images/carousel-2.jpg",
-			"alt": "product 2",
-		},
-
-		{
-			"id": 3,
-			"src": "./public/images/carousel-3.jpg",
-			"alt": "product 3",
-		},
-
-		{
-			"id": 4,
-			"src": "./public/images/carousel-4.jpg",
-			"alt": "product 4",
-		},
-	];
-  res.render('index', { blog: blog, start: 1, count: 20, total: 2571, products: products});
+  res.render('index', { 
+  	previousPage: {pageUrl: "http://locahost:3000/?pageNumber=1", linkText: "Previous"},
+  	pages: [
+  		{pageUrl: "http://locahost:3000/?pageNumber=1", linkText: 1},
+  		{pageUrl: "http://locahost:3000/?pageNumber=2", linkText: 2, isCurrentPage: true},
+  		{pageUrl: "http://locahost:3000/?pageNumber=3", linkText: 3},
+  		{pageUrl: "http://locahost:3000/?pageNumber=4", linkText: 4},
+  		{pageUrl: "http://locahost:3000/?pageNumber=5", linkText: 5},
+	],
+	nextPage: {pageUrl: "http://locahost:3000/?pageNumber=1", linkText: "Next"},
+  });
 
 
 });
