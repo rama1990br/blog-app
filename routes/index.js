@@ -16,9 +16,17 @@ router.get('/', function(req, res, next) {
 	],
 	nextPage: {pageUrl: "http://locahost:3000/?pageNumber=1", linkText: "Next"},
   });
-
-
 });
 
+router.get('/posts', function(req, res, next) {
+  var response = [
+    {cardNumber: Math.floor(Math.random() * 100)},
+    {cardNumber: Math.floor(Math.random() * 100)},
+    {cardNumber: Math.floor(Math.random() * 100)},
+    {cardNumber: Math.floor(Math.random() * 100)},
+    {cardNumber: Math.floor(Math.random() * 100)}
+  ];
+  return res.send(response);
+});
 
 module.exports = router;
