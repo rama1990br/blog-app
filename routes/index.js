@@ -6,6 +6,7 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { 
+    navigation: {start: 21, count: 20, total: 60, isFirstPage: true, isLastPage: false},
   	previousPage: {pageUrl: "http://locahost:3000/?pageNumber=1", linkText: "Previous"},
   	pages: [
   		{pageUrl: "http://locahost:3000/?pageNumber=1", linkText: 1},
@@ -16,6 +17,13 @@ router.get('/', function(req, res, next) {
 	],
 	nextPage: {pageUrl: "http://locahost:3000/?pageNumber=1", linkText: "Next"},
   });
+});
+
+router.get('/previousPage', function(req, res, next) {
+  var response = [
+    {navigation: {start: 1, count: 20, total: 60, isFirstPage: true, isLastPage: false}}
+  ];
+  return res.send(response);
 });
 
 router.get('/posts', function(req, res, next) {

@@ -1,5 +1,15 @@
 <div class="navigation" id="{{id}}">
-	<span class="current-page-description">{{start}} to {{count}} of {{total}}</span>
-	<button class="left-arrow js-navigation-left"></button>
-	<button class="right-arrow js-naviagation-right"></button>
+	{{#navigation}}
+		<span class="current-page-description">{{start}} to {{count}} of {{total}}</span>
+	{{#if isFirstPage}}
+		<button class="left-arrow js-navigation-left" disabled></button>
+	{{else}}
+		<button class="left-arrow js-navigation-left"></button>
+	{{/if}}
+	{{#if isLastPage}}
+		<button class="right-arrow js-navigation-right" disabled></button>
+	{{else}}
+		<button class="right-arrow js-navigation-right"></button>
+	{{/if}}
+	{{/navigation}}
 </div>
