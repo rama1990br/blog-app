@@ -1,12 +1,15 @@
 /* navigation styles */
-.pagination a {
+.minesweeper-wrapper {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
   border: 1px solid black; }
-
-.pagination .page {
-  display: inline-block; }
-
-.pagination .current-page {
-  background-color: gray; }
+  .minesweeper-wrapper .data-wrapper {
+    border-collapse: collapse;
+    border: 1px solid black; }
+  .minesweeper-wrapper .btn {
+    width: 100%;
+    height: 100%; }
 
 body {
   padding: 0 100px;

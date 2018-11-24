@@ -1,0 +1,16 @@
+.minesweeper-wrapper {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid black;
+
+	.data-wrapper {
+		border-collapse: collapse;
+		border: 1px solid black;
+	}
+	
+	.btn {
+		width: 100%;
+		height: 100%;
+	}
+}
