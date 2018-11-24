@@ -21,7 +21,7 @@ function debounce(func, timeout) {
 
 function InfiniteScroll(el) {
 	this.el = el;
-	this.el.addEventListener('scroll', debounce(this.scrollMessage.bind(this, 500)));
+	this.el.addEventListener('scroll', debounce(this.scrollMessage.bind(this), 500));
 }
 
 InfiniteScroll.prototype = {
