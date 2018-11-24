@@ -1,0 +1,28 @@
+.colour-base {
+	height: 150px;
+    width: 200px;
+    background-color: $color1;
+    margin: 20px;
+    border-radius: 200px;
+}
+
+button {
+    width: 80px;
+    height: 40px;
+}
+
+.red-button {
+	background-color: $color2;
+}
+
+.blue-button {
+	background-color: blue;
+}
+
+.green-button {
+	background-color: green;
+}
+
+// .reviewed.deleted {
+//   background-color: mix($color1, $color2);
+// }

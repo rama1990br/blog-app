@@ -1,23 +1,28 @@
 /* navigation styles */
-.pagination a {
-  border: 1px solid black; }
+/* colour-palette styles */
+.colour-base {
+  height: 150px;
+  width: 200px;
+  background-color: yellow;
+  margin: 20px;
+  border-radius: 200px; }
 
-.pagination .page {
-  display: inline-block; }
+button {
+  width: 80px;
+  height: 40px; }
 
-.pagination .current-page {
-  background-color: gray; }
+.red-button {
+  background-color: red; }
+
+.blue-button {
+  background-color: blue; }
+
+.green-button {
+  background-color: green; }
 
 body {
   padding: 0 100px;
   margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
-
-.blog-container {
-  width: 100%;
-  min-height: 700px;
-  background-color: white; }
-  .blog-container h1 {
-    margin: 0; }
 
 /*# sourceMappingURL=style.css.map */

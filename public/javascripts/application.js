@@ -1,11 +1,13 @@
-(function Application() {
-	window.addEventListener('load', function() {
-		function handlePagination(evt) {
-			console.log('Hi!');
-			evt.preventDefault();
-		};
-
-		var pages = document.getElementById('pages');
-		pages.addEventListener('click', handlePagination);
-	});
+function Application() {
+	function init() {
+		var colourPaletteContainer = document.getElementById('colour-palette');
+		this.colourPalette = new ColourPalette(colourPaletteContainer);
+	}
+	init.apply(this, arguments);
+	return this;
+}
+(function() {
+ 	window.addEventListener('load', function() {
+ 		window.application = new Application();
+ 	});
 }());
