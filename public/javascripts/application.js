@@ -1,5 +1,8 @@
 function Application() {
 	function init() {
+  //   var checkboxesContainer = document.getElementById('checkbox-container');
+		// this.checkboxes = new Checkboxes(checkboxesContainer);
+
 		// var colourPaletteContainer = document.getElementById('colour-palette');
 		// this.colourPalette = new ColourPalette(colourPaletteContainer);
 

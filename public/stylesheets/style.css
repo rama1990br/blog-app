@@ -4,15 +4,32 @@
   max-height: 400px;
   overflow-y: scroll; }
 
+
 .infinite-scroll-wrapper .card {
   height: 100px;
   border: 1px solid black;
   margin: 10px;
   list-style-type: none; }
 
+button {
+  width: 80px;
+  height: 40px; }
+
+.red-button {
+  background-color: red; }
+
+.blue-button {
+  background-color: blue; }
+
+.green-button {
+  background-color: green; }
+
 body {
   padding: 0 100px;
   margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+.other-checkboxes {
+  list-style: none; }
 
 /*# sourceMappingURL=style.css.map */
