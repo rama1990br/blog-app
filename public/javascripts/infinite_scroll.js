@@ -27,11 +27,12 @@ function InfiniteScroll(el) {
 InfiniteScroll.prototype = {
 	scrollMessage: function() {
 		if (this.isNearBottom()) {
-			this.getNextPage();
+			this.getNextPage.call(this);
 		}
 	},
 
 	getNextPage: function() {
+    var that = this;
 	fetch('http://localhost:3000/posts')
 		.then(function(response) {
 			return response.json();
@@ -41,10 +42,10 @@ InfiniteScroll.prototype = {
 				var li = document.createElement('li');
 				li.textContent = json[i].cardNumber;
 				li.setAttribute('class', 'card');
-				this.el.appendChild(li);
+				that.el.appendChild(li);
 			}
 		});
-	};
+	},
 
 	isNearBottom: function () {
 	var scrollTop = this.el.scrollTop;

@@ -1,9 +1,11 @@
 @import "variables";
-@import "partials/colour-palette";
+// @import "partials/colour-palette";
 // @import "partials/navigation";
 // @import "partials/pagination";
-// @import "partials/infinite_scroll";
+@import "partials/infinite_scroll";
 // @import "partials/minesweeper";
+// @import "partials/carousel";
+// @import "partials/modal";
 
 body {
   padding: 0 100px;
