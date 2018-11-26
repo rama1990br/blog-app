@@ -6,7 +6,7 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { 
-    
+    navigation: {start: 1, count: 20, total: 60, isFirstPage: true, isLastPage: false}
   });
 });
 
