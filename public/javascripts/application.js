@@ -9,13 +9,19 @@ function Application() {
 		// var minesweeperContainer = document.getElementById('minesweeper');
 		// this.minesweeper = new Minesweeper(minesweeperContainer);
 
-    var infiniteScrollContainer = document.getElementById('infinite-scroll');
-    this.infiniteScroll = new InfiniteScroll(infiniteScrollContainer);
+    // var infiniteScrollContainer = document.getElementById('infinite-scroll');
+    // this.infiniteScroll = new InfiniteScroll(infiniteScrollContainer);
 
-    // var modalContainer = document.querySelector('modal');
+    // var modalContainer = document.querySelector('.modal');
     // this.modal = new Modal(modalContainer);
 
-    // var carouselContainer = document.querySelector('carousel');
+    // var progressBarContainer = document.querySelector('#progress_bar');
+    // this.progressBar = new ProgressBar(progressBarContainer);
+
+    // var magnifierContainer = document.querySelector('#magnifier');
+    // this.magnifierContainer = new Magnifier(magnifierContainer);
+
+    // var carouselContainer = document.querySelector('.carousel');
     // this.carousel = new Carousel(carouselContainer);
 
     // var paginationContainer = document.getElementById('pagination');

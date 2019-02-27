@@ -1,6 +1,6 @@
 function Navigation(el) {
 	function init() {
-		this.leftNavigationBtn = this.el.querySelectorAll('.js-navigation-left');
+		this.leftNavigationBtn = this.el.querySelector('.js-navigation-left');
 		this.rightNavigationBtn = this.el.querySelector('.js-navigation-right');
 		this.leftNavigationBtn.addEventListener('click', this.goToPreviousPage.bind(this));
 		this.rightNavigationBtn.addEventListener('click', this.goToNextPage.bind(this));

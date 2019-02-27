@@ -1,0 +1,22 @@
+body {
+  text-align: center;
+}
+h1 {
+  margin-bottom: 100px;
+}
+.magnifierWrap {
+  width: 300px; 
+  margin: 50px auto; 
+  position: relative;
+}
+.magnifier {
+  width: 175px; 
+  height: 175px;
+  position: absolute;
+  border-radius: 100%;
+  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 
+  0 0 7px 7px rgba(0, 0, 0, 0.25), 
+  inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  background: url('../images/carousel-1.jpg') no-repeat;
+  display: none;
+}
