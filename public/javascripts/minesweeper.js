@@ -19,10 +19,10 @@ Minesweeper.prototype = {
 	},
 
 	revealNeighbours: function(row, column, button) {
-		var rows = this.el.rows;
+		var cells = this.el.querySelectorAll('data-wrapper');
 		if(row > 0 && column < this.matrix[0].length) {
 			button.querySelector('span').textContent = this.matrix[row][column];
-			// rows[row - 1].
+			revealNeighbours(cells.filter(cell => {cell.dataset.rowNumber = row - 1}), cells.filter(cell => {cell.dataset.colNumber = column}))
 		}
 	}
 };
